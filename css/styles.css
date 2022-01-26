@@ -615,7 +615,7 @@ a {
 }
 
 .form-subscribe-input {
-  width: 300px;
+  width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -824,7 +824,10 @@ a {
   cursor: pointer;
   padding: 0;
 }
-
+.clous-btn:hover {
+  fill: var(--accent-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -851,8 +854,8 @@ a {
 
 .close-btn {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  /* top: 8px;
+  right: 8px; */
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -860,6 +863,9 @@ a {
   background-color: transparent;
   cursor: pointer;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .close-btn:hover {
@@ -920,8 +926,8 @@ a {
   left: 14px;
   transform: translateY(-50%);
   display: block;
-  /* width: 12px;
-  height: 12px; */
+  width: 12px;
+  height: 12px;
   fill: var(--header-color);
   transition: fill 250ms linear;
 }
